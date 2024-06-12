@@ -1,0 +1,100 @@
+[
+    {
+        "ForecastDays": 30,
+        "Models": ["HoltWinters", "MovingAverage"]
+    },
+
+    {
+        "HoltWinters": {
+            "model_name": "HoltWinters",
+            "model_class": "HoltWinters",
+            "model_type": "TimeSeries",
+            "model_description": "First version of holt winters",
+            "model_parameters":{
+                "seasonal": "add", 
+                "seasonal_periods": 7
+            }
+        },
+
+        "MovingAverage": {
+            "model_name": "MovingAverage",
+            "model_class": "MovingAverage",
+            "model_type": "TimeSeries",
+            "model_description": "First version of moving average",
+            "model_parameters":{
+                "time_window": 7
+            }
+        },
+
+        "NeuralNetworkFF": {
+            "model_name": "NeuralNetworkFF",
+            "model_class": "NeuralNetworkFF",
+            "model_type": "Regression",
+            "model_description": "First version of Neural network ff",
+            "model_parameters":{
+                "epochs": 100,
+                "time_window": 7,
+                "train_split_perc": 10,
+                "batch_size": 7
+            }
+        },
+
+        "RandomForest": {
+            "model_name": "RandomForest",
+            "model_class": "RandomForest",
+            "model_type": "Regression",
+            "model_description": "First version of Random Forest",
+            "model_parameters":{
+                "n_estimators": 1000,
+                "random_state": 42
+            }
+        },
+
+        "NeuralNetworkLSTM": {
+            "model_name": "NeuralNetworkLSTM",
+            "model_class": "NeuralNetworkLSTM",
+            "model_type": "Regression",
+            "model_description": "First version of Neural network ff",
+            "model_parameters":{
+                "epochs": 100,
+                "time_window": 7,
+                "train_split_perc": 10,
+                "batch_size": 7
+            }
+        },
+
+        "FacebookProphet": {
+            "model_name": "FacebookProphet",
+            "model_class": "FacebookProphet",
+            "model_type": "TimeSeries",
+            "model_description": "First version of Facebook Prophet",
+            "model_parameters":{
+                "interval_width": 0.95,
+                "pred_freq": "D"
+            }
+        },
+
+        "NeuralProphet": {
+            "model_name": "NeuralProphet",
+            "model_class": "NeuralProphet",
+            "model_type": "TimeSeries",
+            "model_description": "First version of Neural Prophet",
+            "model_parameters":{
+                "interval_width": 0.95,
+                "pred_freq": "D"
+            }
+        },
+
+        "XGBoost": {
+            "model_name": "XGBoost",
+            "model_class": "XGBoost",
+            "model_type": "TimeSeries",
+            "model_description": "First version of XGBoost",
+            "model_parameters":{
+                "interval_width": 0.95,
+                "pred_freq": "D"
+            }
+        }
+    }
+
+]

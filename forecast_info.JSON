@@ -1,0 +1,9 @@
+{
+    "forecastDays": 15,
+    "selectedModels": [
+        "HoltWinters"
+    ],
+    "forecastingType": [
+        "historicalForecasting"
+    ]
+}

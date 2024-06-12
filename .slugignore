@@ -254,10 +254,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-.vscode
-.pem
-
-# Models folders
-lightning_logs/
-
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,python
