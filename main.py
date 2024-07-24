@@ -5,8 +5,6 @@ from pydantic import BaseModel, Field
 from typing import List, Dict
 from forecast_generator import forecast_process as fp
 
-
-
 import json
 import os
 import sys
